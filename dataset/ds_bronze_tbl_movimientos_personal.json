@@ -1,0 +1,61 @@
+{
+	"name": "ds_bronze_tbl_movimientos_personal",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_dw_ffaa",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "bronze"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id_movimiento",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "id_efectivo",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "id_tipo",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "id_unidad_destino",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "id_rango",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "fecha_movimiento",
+				"type": "varchar"
+			},
+			{
+				"name": "motivo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "documento_respaldo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "observacion",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "bronze",
+			"table": "tbl_movimientos_personal"
+		}
+	}
+}
