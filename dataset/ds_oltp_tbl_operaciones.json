@@ -1,5 +1,5 @@
 {
-	"name": "ds_oltp_tbl_efectivos",
+	"name": "ds_oltp_tbl_operaciones",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_oltp_ffaa",
@@ -12,61 +12,77 @@
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "id_efectivo",
+				"name": "id_operacion",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "id_especialidad",
+				"name": "id_tipo",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "id_unidad_actual",
+				"name": "id_unidad_resp",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "id_rango_actual",
+				"name": "id_zona",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "nombre",
+				"name": "nombre_operacion",
 				"type": "nvarchar"
 			},
 			{
-				"name": "ci",
+				"name": "fecha_inicio",
 				"type": "varchar"
 			},
 			{
-				"name": "fecha_nacimiento",
+				"name": "fecha_fin",
 				"type": "varchar"
 			},
 			{
-				"name": "genero",
+				"name": "efectivos_desplegados",
 				"type": "varchar"
 			},
 			{
-				"name": "departamento_origen",
+				"name": "vehiculos_utilizados",
+				"type": "varchar"
+			},
+			{
+				"name": "duracion_dias",
+				"type": "varchar"
+			},
+			{
+				"name": "costo_operacion",
+				"type": "varchar"
+			},
+			{
+				"name": "resultado",
+				"type": "varchar"
+			},
+			{
+				"name": "detenidos",
+				"type": "varchar"
+			},
+			{
+				"name": "area_km2",
+				"type": "varchar"
+			},
+			{
+				"name": "incidentes",
+				"type": "varchar"
+			},
+			{
+				"name": "observaciones",
 				"type": "nvarchar"
-			},
-			{
-				"name": "fecha_ingreso",
-				"type": "varchar"
-			},
-			{
-				"name": "estado",
-				"type": "varchar"
-			},
-			{
-				"name": "salario_mensual",
-				"type": "varchar"
 			}
 		],
 		"typeProperties": {
 			"schema": "oltp",
-			"table": "tbl_efectivos"
+			"table": "tbl_operaciones"
 		}
 	}
 }

@@ -5,6 +5,9 @@
 			"referenceName": "ls_dw_ffaa",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "bronze"
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [
