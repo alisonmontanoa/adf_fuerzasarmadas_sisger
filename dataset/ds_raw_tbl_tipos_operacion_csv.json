@@ -1,0 +1,24 @@
+{
+	"name": "ds_raw_tbl_tipos_operacion_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_ffaa",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "tbl_tipos_operacion.csv",
+				"folderPath": "tbl_tipos_operacion",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

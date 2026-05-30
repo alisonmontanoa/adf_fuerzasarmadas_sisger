@@ -1,0 +1,24 @@
+{
+	"name": "ds_raw_tbl_unidades_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_ffaa",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "tbl_unidades.csv",
+				"folderPath": "tbl_unidades",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
