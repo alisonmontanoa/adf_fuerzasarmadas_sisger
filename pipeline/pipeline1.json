@@ -1,5 +1,5 @@
 {
-	"name": "pl_copy_raw_tbl_efectivos_to_bronze",
+	"name": "pipeline1",
 	"properties": {
 		"activities": [
 			{
@@ -43,13 +43,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_raw_tbl_zonas_csv",
+						"referenceName": "ds_raw_tbl_rangos_csv",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_bronze_tbl_zonas",
+						"referenceName": "ds_bronze_tbl_rangos",
 						"type": "DatasetReference"
 					}
 				]
